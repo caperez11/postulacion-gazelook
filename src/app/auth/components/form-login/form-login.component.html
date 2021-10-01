@@ -9,6 +9,7 @@
         formControlName="email"
         name="email"
       />
+      <label for="error" *ngIf="isValidField('email')">Email is required</label>
     </div>
     <div class="auth__input">
       <label for="email" class="auth__label">PASSWORD</label>

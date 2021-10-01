@@ -12,10 +12,10 @@ import { AuthService } from './../../services/auth.service';
 })
 export class FormLoginComponent implements OnInit {
   loginForm = this.fb.group({
-    email: ['', [Validators.required, Validators.minLength(4)]],
+    email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required, Validators.minLength(8)]],
   });
-  constructor( private fb: FormBuilder, private authService: AuthService) { }
+  constructor(private fb: FormBuilder, private authService: AuthService) { }
 
   ngOnInit(): void {
     this.loginForm.reset({
@@ -23,20 +23,20 @@ export class FormLoginComponent implements OnInit {
     });
   }
 
-  public login(){
-    if ( this.loginForm.invalid )  {
+  public login() {
+    if (this.loginForm.invalid) {
       this.loginForm.markAllAsTouched();
       return;
     }
-    const { email} = this.loginForm.value;
-    this.authService.login(email).subscribe((res)=>{
-      Swal.fire(`${res.message}`);
+    const { email } = this.loginForm.value;
+    this.authService.login(email).subscribe((resp) => {
+      Swal.fire(`${resp.message}`);
       this.loginForm.reset();
     });
 
   }
 
-  public  isValidField(campo: string): boolean | null {
+  public isValidField(campo: string): boolean | null {
     return (
       this.loginForm.controls[campo].errors &&
       this.loginForm.controls[campo].touched

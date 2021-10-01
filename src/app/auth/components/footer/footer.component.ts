@@ -14,8 +14,8 @@ export class FooterComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
-    this.authService.getData().subscribe(res => {
-      this.data = res[0];
+    this.authService.getData().subscribe((resp) => {
+      this.data = resp[0];
     })
   }
 
