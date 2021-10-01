@@ -1,6 +1,6 @@
 # Prueba Gazelook
 
-Link del sitio desplegado [Prueba](https://github.com/angular/angular-cli) version 1.0.0.
+Link del sitio desplegado [Prueba](https://postulacion-gazelook-chrisperez.vercel.app/) version 1.0.0.
 
 ## Información
 
