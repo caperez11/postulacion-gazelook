@@ -1,0 +1,28 @@
+.auth__content__message {
+  margin-bottom: 2px;
+  margin-top: 1.8px;
+  text-transform: uppercase;
+}
+
+.auth__buttons {
+  background-image: url('../../../../assets/svgs/forma-boton.svg');
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+
+}
+
+.auth__buttons span {
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}

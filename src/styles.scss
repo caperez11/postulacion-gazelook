@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+$fondo: #0e2541;
+$yellow: #F0B823;
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+html,
+body {
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.auth__main {
+  background-color: $fondo;
+  height: 100%;
+}

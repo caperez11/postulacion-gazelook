@@ -1,0 +1,30 @@
+.auth__title {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.auth__message__background {
+  background-image: url('../../../../assets/svgs/forma-amarilla-pensamientos-login1.svg');
+  color: #000;
+  margin-left: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  text-align: center;
+  width: 80%;
+}
+.auth__message_date{
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 4px;
+  color: azure;
+  background-color: #304B72;
+  display: flex;
+  opacity: 0.75;
+  width: 35%;
+}
+
+.auth__message__footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

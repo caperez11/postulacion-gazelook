@@ -1,0 +1,43 @@
+$fondo: #334651;
+$yellow: #F0B823;
+
+.auth__main {
+  display: flex;
+  justify-content: center;
+
+}
+
+.auth__background {
+  background-image: url('../../../../assets/svgs/fondo-estrellas-cortado.svg');
+  font-size: 1rem;
+  width: 30%;
+}
+
+.auth__content__main {
+  display: flex;
+  height: 66%;
+  width: 100%;
+}
+
+.auth__content {
+  background-color: $fondo;
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  opacity: 0.75;
+  text-align: center;
+  width: 70%;
+}
+
+.auth__background__form {
+  background-image: url('../../../../assets/img/forma-mundo.png');
+  background-repeat: no-repeat;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.auth__background__form img {
+  background-color: red;
+  float: unset;
+}

@@ -1,0 +1,27 @@
+<div>
+  <h2 class="auth__title__login">LOGIN</h2>
+  <form (submit)="login()" [formGroup]="loginForm" autocomplete="off">
+    <div class="auth__input">
+      <label for="email" class="auth__label">E-MAIL</label>
+      <input
+        type="text"
+        placeholder="Lorem ipsum"
+        formControlName="email"
+        name="email"
+      />
+    </div>
+    <div class="auth__input">
+      <label for="email" class="auth__label">PASSWORD</label>
+      <input
+        type="password"
+        placeholder="Lorem ipsum"
+        formControlName="password"
+        name="password"
+      />
+      <label for="error" *ngIf="isValidField('password')">Password required min 8 caracteres</label>
+    </div>
+    <div class="auth__buttons">
+      <span (click)="login()">SUBMIT</span>
+    </div>
+  </form>
+</div>
